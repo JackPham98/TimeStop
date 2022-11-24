@@ -49,8 +49,8 @@ function count(){
 function countLap(){
 
 
-    let hoursLap = Math.floor(percentSecs / 360000)
-    let minsLap = Math.floor((percentSecs - (hoursLap*360000)) / 6000);
+    let hoursLap = Math.floor(percentSecsLap / 360000)
+    let minsLap = Math.floor((percentSecsLap - (hoursLap*360000)) / 6000);
     let secsLap = Math.floor((percentSecsLap - (hoursLap*360000) - (minsLap*6000)) / 100 );
     let percecsLap = Math.floor((percentSecsLap - (hoursLap*360000) - (minsLap*6000)) - (secsLap*100) )
 
