@@ -30,6 +30,10 @@ body {
 	font-size: 5rem;
 	font-weight: 300;
 	margin-bottom: 1.75rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .controls {

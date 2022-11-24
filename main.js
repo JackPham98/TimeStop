@@ -5,6 +5,12 @@ const start_btn = document.querySelector('.start');
 const stop_btn = document.querySelector('.stop');
 const reset_btn = document.querySelector('.reset');
 const lap_btn = document.querySelector('.lap')
+const time_record_el = document.querySelector('.time-record')
+
+
+const lap_list_el = document.createElement('div');
+lap_list_el.classList.add('.lap-list')
+time_record_el.appendChild(lap_list_el);
 
 let percentSecs = 0;
 let interval = null;
@@ -91,14 +97,14 @@ function reset(){
     countLap();
 
     time_el.innerText = '00:00:00:000';
+    lap_list_el.remove()
+    console.log(lap_list_el)
 }
 
 function lap(){
 
     percentSecsLap = 0;
     lapCount++;
-
-    const time_record_el = document.querySelector('.time-record')
 
 
     const time_lap_el = document.createElement('div');
@@ -111,7 +117,7 @@ function lap(){
     const info_el = document.createElement('span');
     info_el.classList.add('info');
 
-    time_record_el.appendChild(time_lap_el);
+    lap_list_el.appendChild(time_lap_el);
     time_lap_el.appendChild(lap_counter_el);
     time_lap_el.appendChild(info_el);
 
@@ -119,5 +125,6 @@ function lap(){
     lap_counter_el.innerText = `Lap ${lapCount}`;
     info_el.innerText = recordTimerLap;
     console.log(info_el.innerText)
+
 }
 
