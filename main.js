@@ -105,18 +105,18 @@ function lap(){
     time_lap_el.classList.add('time-lap');
 
 
-    const lap_el = document.createElement('span');
-    lap_el.classList.add('lap');
+    const lap_counter_el = document.createElement('span');
+    lap_counter_el.classList.add('lap-counter');
 
     const info_el = document.createElement('span');
     info_el.classList.add('info');
 
     time_record_el.appendChild(time_lap_el);
-    time_lap_el.appendChild(lap_el);
+    time_lap_el.appendChild(lap_counter_el);
     time_lap_el.appendChild(info_el);
 
 
-    lap_el.innerText = `Lap ${lapCount}`;
+    lap_counter_el.innerText = `Lap ${lapCount}`;
     info_el.innerText = recordTimerLap;
     console.log(info_el.innerText)
 }

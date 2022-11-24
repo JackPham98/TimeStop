@@ -22,14 +22,14 @@ body {
 	width: 100%;
 	max-width: 540px;
 	margin: 4rem auto;
-	padding: 1rem 2rem;
+	padding: 3rem 2rem;
 	border-radius: 1rem;
 }
 
 .watch .time {
 	font-size: 5rem;
 	font-weight: 300;
-	margin-bottom: 1rem;
+	margin-bottom: 1.75rem;
 }
 
 .controls {
@@ -45,8 +45,8 @@ body {
 	border: none;
 	cursor: pointer;
 
-	margin: 0 0.5rem;
-	padding: 0.5rem 1rem;
+	margin: 0 1rem;
+	padding: 0.75rem 1.5rem;
 	border-radius: 0.5rem;
 
 	color: #FFF;
@@ -67,7 +67,7 @@ body {
 
 .time-record {
 	margin: 0 auto;
-	width: 100%;
+	width: 50%;
 	max-width: 400px;
 	background-color: var(--darkdark);
 	border-radius: 1rem;
@@ -77,10 +77,19 @@ body {
 
 .time-record .time-lap {
 	display: flex;
-	width: 40%;	
+	width: 50%;	
 	margin: 1rem auto;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	justify-content: space-between;
+}
 
+.lap-counter {
+	color: lightcoral;
+	font-weight: 600;
+}
+
+.info{
+	color: #dddddd;
+	font-weight: 600;
 }
